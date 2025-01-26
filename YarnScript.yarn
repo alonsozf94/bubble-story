@@ -1,0 +1,171 @@
+title: BubbleStart
+---
+<<set $time to 0>>
+You take a break from work and go to the company's building roof to have the plain sandwich you prepared in a rush on the morning.
+Exhaustedly, you sit on a bench and see a bubble wand.
+The bubble wand looks almost empty, but enough for maybe one bubble
+
+-> Blow bubble
+    <<jump Blow>>
+-> Finish your sandwich and go
+    <<jump Leave>>
+-> Stare stupidly at the bubble wand
+    <<set $time to 1>>
+    <<jump Staring>>
+
+===
+title: Staring
+---
+You stare at the bubble wand.
+Almost like not a single thought is crossing your mind.
+Like you're waiting for someone to choose an option for you...
+-> Blow bubble
+    <<jump Blow>>
+-> Finish your sandwich and leave
+    <<jump Leave>>
+-> Keep staring
+    You keep staring at the wand.
+    -> Philosophize
+        You start pondering about the wand, questioning his existance.
+        "Why is it there? Kids are not allowed in this building"
+        "Why I'm I just staring at it? Should I have done something already with it? I'm I being tested?"
+        "Is there another dimension where I choose to make a bubble?"
+        As you ask yourself all this questions you feel something swoop next to you.
+        You take sometime to snap out of your otherwordly thoughts.
+        You realize a seagull just took your sandwich.
+        You take a look at your watch and realize you have been immersed in your thoughts for over an hour.
+        You rush back to the office stressed, hungry and confused.
+        As you take a sit at your office chair waiting for your your boss to yell at you, the same thoughts cross you had begin to appear again...
+        -EXISTENTIAL ENDING-
+    -> Snap out of it
+        You snap out of your trance and begin packing your things up.
+        You're late, you didn't finish your sandwich and your mind is as blank as it was 10 minutes ago.
+        You go back to your computer to stare at a screen for 4 more hours.
+        -NPC ENDING-
+===
+title: Blow
+---
+You use the bubble wand.
+A mid-sized bubble pops out.
+You look at your bubble like a proud father watching his son on his first sports game...
+<<if $time < 2>>
+    -> Follow the bubble to the edge of the building.
+        Your curiosity wins over you.
+        You follow the bubble as it goes away to the edge of the building and get at an arms distance from it.
+        -> Pop it
+            For a moment, you feel powerful.
+            You think to yourself: "I've got the power to create thus I also have the power to destroy"
+            You get closer
+            You pop the bubble.
+            The poor bubble is no more.
+            The feeling goes away, there is no more bubbles and your sandwich is cold now.
+            You go back to work...
+            -GOD MODE ENDING-
+        -> Let it go
+            <<jump LettingGo>>
+    -> Relax and watch as the bubble fade away.
+        You stay sit as you watch your creation float away.
+        The wind carries the bubble up to the sky, where it disappears into a gap as the sun peeks through the gray clouds.
+        -> Try to see where it went
+            You keep innocently staring at the bubble going up.
+            Suddenly the clouds move and the sun starts shining strongly.
+            You lose vision for a couple of seconds.
+            You drop your sandwich and make a mess.
+            As you try to clean the mess you realize your break finished 5 minutes ago.
+            You rush back to your office hungry and stressed.
+            You think about the bubble and wonder where did it go...
+            -USE SUNGLASSES ENDING-
+        -> Let it go 
+            Even though it's only a bubble, you feel an empowering feeling inside.
+            You get up and decide to quit your boring job.
+            You throw your cold, plain sandwich at your boss, go home, pack your suitcase, and venture off to sunnier lands and tropical beaches.
+            -TROPICAL ESCAPE ENDING-
+<<else>>
+    The bubble floats away and you stare at it amusingly.
+    Suddenly you feel a presence diving quickly at you from above.
+    A seagull just stole your sandwich 🐦
+        -> Follow the gull
+        You hastily follow the seagull to try to get back your exquisite meal
+        It's too fast!
+            ->Throw something at it
+                An ancestral hunter feeling flows within you and you decide to athletically throw something at the foul beast that just stole your carb-rich prey.
+                The only thing within reach is your bag.
+                You don't think too much about it.
+                As the bag flies towards it's target you realize that you brought your working laptop in the bag to your lunch break. (Why?)
+                The missile does not reach its feathered target.
+                Your laptop gets destroyed.
+                You go back to work with what's left of the company's laptop.
+                You get fired.
+                You start a small street food cart business selling bubble tea in the city
+                It's not too bad!
+                -BOBBA TEA ENDING-
+            -> Give up
+                It's been years since you stepped on a gym so your heroic pursuit comes to an end pretty fast.
+                You go back to work with your head down after being defeated by a bird.
+                You decide to join the gym the day after.
+                -ATHLETIC ENDING-
+        -> Stare at the bird dumbfounded
+            The seagull succesfully flies towards the horizon making its seagull sounds.
+            Almost like its laughing at you.
+            You curse the bird as if it understands your language and get back to work.
+            You decide you will buy some fried chicken afterwork so it's not all bad.
+            -AVIAN ENDING-
+<<endif>>
+===
+title: Leave
+---
+You think to yourself: "Bubbles are for kids anyway, I'm a grown man"
+You prepare to leave but you feel something holding you back and drawing you to the bubble making device
+-> Use the bubble wand
+    You have second thoughts and decide to use the bubble wand.
+    Maybe there's the still some joy exisiting within you.
+    <<set $time to 2>>
+    <<jump Blow>>
+-> Finish your food and go
+    As a grown man should, you finish your sandwich and get ready to go back to work to get yelled at by your boss.
+    You finish work and go back home to repeat it all again.
+    -SALARY MAN ENDING-
+===
+title: Run
+---
+Well, looks like your break is over.
+You go back to work and forget about it.
+You hear some drama happening in the office, but you go on with your tasks and wait for the day to finish...
+-NOTHING HAPPENED HERE ENDING-
+===
+title: LettingGo
+---
+You keep following it until it reaches the edge and slowly go down to the busy streets.
+        You keep watching as your bubbly offspring floats down to the city.
+        You can barely see it but it looks like its going to end up close to your building just in the front street.
+        Looks like your creation it's going to meet its end at a seemingly desperate man's face.
+        Unfortunately for that joker, bubbly pops right in his eye.
+        The man throws his suitcase to the road in a fit of rage.
+        -> Turn around and dissapear
+            <<jump Run>>
+        -> Keep watching
+            Amused at the grown man throwing a tantrum over a bubble in the middle of the street, you keep watching.
+            Suddenly you hear a tire screech and crash.
+            The suitcase thrown by anti-bubble man hit a seemingly familiar car.
+            It's your boss's car!
+            The car hits another car parked in front of the company.
+            That last car looked expensive...
+            // Add options
+            You run back to the office and wait for your boss to turn up to the office a bit more grumpy than he usually is.
+            Suddenly you hear lots of yelling.
+            Your boss is getting fired, looks like the car he hit was from the company owner.
+            -> Take courage
+                You think to yourself: "If a bubble did all this then I can do something big too"
+                You step up and take charge of your now ex-boss's tasks
+                You get promoted
+                Eventually you become the new CEO
+                You change the direaction of the company to a bubble making business and rename it BUBBLE INC
+                Wow
+                -BIG BOSS ENDING-
+            -> Mind your business
+                You mind your own business and keep staring at your laptop
+                Eventually you get a new boss that yells at you a bit less than the previous one.
+                Sometimes he buys pizza for everyone.
+                Congrats?
+                -DID SOMETHING REALLY CHANGE? ENDING-
+===
